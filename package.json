@@ -1,8 +1,8 @@
 {
   "name": "artifactory-npm-setup",
   "version": "1.0.1",
-  "description": "",
-  "bin": "./bin/start.js",
+  "description": "setting up your npmrc in a sane mannor",
+  "bin": "./bin/start.sh",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
