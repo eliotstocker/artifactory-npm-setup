@@ -23,7 +23,7 @@ function printHelpandExit(code, error) {
     const sections = [
         {
             header: `Artifactory NPM Setup (${version})`,
-            content: 'setting up your npmrc in a sane mannor'
+            content: 'setting up your npmrc in a sane manor'
         },
         {
             header: 'Options',
