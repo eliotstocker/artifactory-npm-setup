@@ -8,8 +8,11 @@ functions.validateOptions();
 if(!opts['api-username']) {
     functions.printHelpandExit(1,'\'api-username\' must be provided when using api-key authentication...');
 }
-console.log('skipping login api key provided');
-functions.getAuthWithAPIKey()
+
+functions.getAuthWithAPIKey({
+    username: opts['api-username'],
+    apiKey: opts['api-key']
+})
     .catch(e => {
         console.error(e);
         process.exit(1);
