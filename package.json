@@ -1,6 +1,6 @@
 {
   "name": "artifactory-npm-setup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "setting up your npmrc in a sane manor",
   "bin": "./bin/start.js",
   "main": "index.js",
