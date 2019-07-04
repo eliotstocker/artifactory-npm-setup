@@ -38,6 +38,11 @@ module.exports = [
         description: '[Optional] path to the npmrc file to replace/update (defaults to .npmrc in home directory)'
     },
     {
+        name: 'no-interactive',
+        type: Boolean,
+        description: '[Optional] disable electron interactive shell (for user login etc), must be used in conjunction with api-key and api-username'
+    },
+    {
         name: 'help',
         alias: 'h',
         type: Boolean,
