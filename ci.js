@@ -13,6 +13,7 @@ functions.getAuthWithAPIKey({
     username: opts['api-username'],
     apiKey: opts['api-key']
 })
+    .then(functions.writeNPMRC)
     .catch(e => {
         console.error(e);
         process.exit(1);

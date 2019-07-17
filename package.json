@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "setting up your npmrc in a sane manor",
   "bin": "./bin/start.js",
-  "main": "index.js",
+  "main": "lib/functionality.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"

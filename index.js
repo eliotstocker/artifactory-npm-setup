@@ -22,6 +22,7 @@ if (opts['api-key']) {
 
 function simple() {
     functions.getAuthWithAPIKey
+        .then(functions.writeNPMRC)
         .catch(e => {
             console.error(e);
             process.exit(1);
@@ -40,6 +41,7 @@ function showLoginWindow() {
                 win.webContents.session.cookies.get({domain})
                     .then(functions.getAPICreds)
                     .then(functions.getAuthWithAPIKey)
+                    .then(functions.writeNPMRC)
                     .catch(e =>{
                         console.error(e);
                         process.exit(1);
