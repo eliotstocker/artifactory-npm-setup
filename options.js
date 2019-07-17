@@ -11,7 +11,7 @@ module.exports = [
         name: 'scopes',
         alias: 's',
         type: String,
-        description: '[Optional] scopes to setup for artifactory ob the local machine, if not set artifactory will be sat as your main NPM registry',
+        description: '[Optional] scopes to setup for artifactory on the local machine, if not set the specified artifactory server will be set as your main NPM registry',
         multiple: true
     },
     {

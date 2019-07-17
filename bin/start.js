@@ -31,4 +31,4 @@ function runCommand(cmd) {
 
 args.splice(0, 2);
 
-runCommand(`electron ${path.resolve(__dirname, '../')} ${args.join(' ')}`);
+runCommand(`electron ${path.resolve(__dirname, '../index.js')} ${args.join(' ')}`);
