@@ -14,7 +14,7 @@ const SEPARATOR = process.platform === "win32" ? ";" : ":",
 
 env.PATH = path.resolve(__dirname, '../node_modules/.bin') + SEPARATOR + env.PATH;
 
-function runCommand(cmd) {
+function runCommand(cmd, callback) {
     const proc = exec(cmd, {
         cwd: process.cwd(),
         env: env
@@ -25,10 +25,16 @@ function runCommand(cmd) {
 
     proc.on('exit', code => {
         process.exitCode = code;
+        if(callback) {
+            callback();
+        }
     })
 }
 
 
 args.splice(0, 2);
 
-runCommand(`electron ${path.resolve(__dirname, '../index.js')} ${args.join(' ')}`);
+console.log('Starting Electron...');
+runCommand(`npx electron ${path.resolve(__dirname, '../index.js')} ${args.join(' ')}`);
+
+
