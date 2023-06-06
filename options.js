@@ -32,6 +32,11 @@ module.exports = [
         description: '[Optional] dont keep existing npmrc lines, only write new artifactory lines (defaults to keeping existing npmrc lines, commenting out matching scopes)'
     },
     {
+        name: 'skip-backup',
+        type: Boolean,
+        description: '[Optional] skip creating a backup of existing npmrc files at the same path as specified by the npmrc-path option (defaults to keeping backup)'
+    },
+    {
         name: 'npmrc-path',
         alias: 'p',
         type: String,
