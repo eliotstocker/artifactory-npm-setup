@@ -14,6 +14,7 @@ interactive interface for login.
 | api-key / a | false |  | set an API key to use for login (useful if you require a non interactive login) |
 | api-username / u | false | | required if api-key is set, the username for the user the api key belongs to |
 | no-keep-existing | false | false | dont keep existing npmrc lines, only write new artifactory lines (defaults to keeping existing npmrc lines, commenting out matching scopes) |
+| skip-backup | false | false | skips keeping a backup of existing npmrc files at the same path as specified by the npmrc-path option |
 | npmrc-path / p | false | ~/.npmrc | path to the npmrc file to replace/update (defaults to .npmrc in home directory) |
 | no-interactive | false | | skip loading all interactive elements (for use in CI), you must supply a valid api-key to use this option |
 | help / h | false | | show help text |
